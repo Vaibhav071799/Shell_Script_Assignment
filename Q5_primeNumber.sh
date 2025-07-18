@@ -1,8 +1,15 @@
 #!/bin/bash
 
+# This script checks if a number is prime or not
 prime(){
+        
+        # Getting input from user
         read -p "Enter a number to check if it prime or not: " num
+
+        # Initializing a variable to check if the number is prime
         local isPrime=1
+
+        #prime number condition
         if [[ $num -eq 2 ]];
         then
                 echo "Is prime"
@@ -18,6 +25,7 @@ prime(){
                 done
         fi
 
+        #Printing result
         if [[ $isPrime -eq 1 ]];
         then
                 echo "Prime Number"
